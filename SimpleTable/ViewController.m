@@ -1,27 +1,1 @@
-//
-//  ViewController.m
-//  SimpleTable
-//
-//  Created by jintao on 14-10-30.
-//  Copyright (c) 2014年 jintao. All rights reserved.
-//
-
-#import "ViewController.h"
-
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-@end
+////  ViewController.m//  SimpleTable////  Created by jintao on 14-10-30.//  Copyright (c) 2014年 jintao. All rights reserved.//#import "ViewController.h"@interface ViewController ()@end@implementation ViewController@synthesize listTeams;- (void)viewDidLoad {    [super viewDidLoad];    // Do any additional setup after loading the view, typically from a nib.    NSBundle* bundle = [NSBundle mainBundle];    NSString *plist = [bundle pathForResource:@"team" ofType:@"plist"];    self.listTeams = [[NSArray alloc] initWithContentsOfFile:plist];    }- (void)didReceiveMemoryWarning {    [super didReceiveMemoryWarning];    // Dispose of any resources that can be recreated.}-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{    return [self.listTeams count];}-(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{    static NSString *CellIdentifier = @"CellIdentifier";    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];    if (cell == nil) {        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];    }        NSUInteger row = [indexPath row];    NSDictionary *rowDic = [self.listTeams objectAtIndex:row];    cell.textLabel.text = [rowDic objectForKey:@"name"];        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;    return cell;}@end
