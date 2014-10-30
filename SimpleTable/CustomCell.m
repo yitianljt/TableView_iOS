@@ -1,0 +1,1 @@
+////  CustomCell.m//  SimpleTable////  Created by jintao on 14-10-30.//  Copyright (c) 2014年 jintao. All rights reserved.//#import "CustomCell.h"@implementation CustomCell@end

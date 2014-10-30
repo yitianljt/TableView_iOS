@@ -15,6 +15,7 @@
 		A94FCACC1A01DA44002BB8EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94FCACA1A01DA44002BB8EB /* LaunchScreen.xib */; };
 		A94FCAD81A01DA44002BB8EB /* SimpleTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94FCAD71A01DA44002BB8EB /* SimpleTableTests.m */; };
 		A94FCAE21A01DDC7002BB8EB /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94FCAE11A01DDC7002BB8EB /* team.plist */; };
+		A94FCAE71A01E774002BB8EB /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94FCAE61A01E774002BB8EB /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		A94FCAD61A01DA44002BB8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94FCAD71A01DA44002BB8EB /* SimpleTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableTests.m; sourceTree = "<group>"; };
 		A94FCAE11A01DDC7002BB8EB /* team.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team.plist; sourceTree = "<group>"; };
+		A94FCAE51A01E774002BB8EB /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		A94FCAE61A01E774002BB8EB /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				A94FCACA1A01DA44002BB8EB /* LaunchScreen.xib */,
 				A94FCABB1A01DA44002BB8EB /* Supporting Files */,
 				A94FCAE11A01DDC7002BB8EB /* team.plist */,
+				A94FCAE51A01E774002BB8EB /* CustomCell.h */,
+				A94FCAE61A01E774002BB8EB /* CustomCell.m */,
 			);
 			path = SimpleTable;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			files = (
 				A94FCAC41A01DA44002BB8EB /* ViewController.m in Sources */,
 				A94FCAC11A01DA44002BB8EB /* AppDelegate.m in Sources */,
+				A94FCAE71A01E774002BB8EB /* CustomCell.m in Sources */,
 				A94FCABE1A01DA44002BB8EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
